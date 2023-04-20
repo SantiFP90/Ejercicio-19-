@@ -35,15 +35,17 @@ Algoritmo Ejercicio19
 					1:
 						Escribir "      Su saldo en cuenta es de: $" capital
 					4:
+						Escribir "      $/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\$      "
 						Escribir "      Gracias por utilizar nuestro cajero Bancor"
+						Escribir "      $/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\$      "
 					De Otro Modo:
 						Escribir "      Esa opción no esta disponible dentro del menu"
 				Fin Segun
 			Fin Mientras
 		SiNo
 			intentos = intentos + 1
-			Escribir "Contraseña incorrecta solo tiene 3 intentos."
-			Escribir "Cantidad de intentos: " intentos
+			Escribir "      Contraseña incorrecta solo tiene 3 intentos."
+			Escribir "      Cantidad de intentos: " intentos
 		Fin Si
 	Fin Mientras
 FinAlgoritmo
