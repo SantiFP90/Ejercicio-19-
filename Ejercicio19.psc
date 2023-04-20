@@ -3,7 +3,8 @@ Algoritmo Ejercicio19
 	intentos = 0
 	clave = "santi123"
 	Mientras intentos < 3  Hacer
-		Escribir "Ingrese su contraseña"
+		Escribir  "      ****  BANCOR  CA ****      " 
+		Escribir "      Ingrese su contraseña      "
 		Leer contraseña
 		Si contraseña = clave Entonces
 			intentos = 3
@@ -18,23 +19,25 @@ Algoritmo Ejercicio19
 				Leer opcionIngresada
 				Segun opcionIngresada Hacer
 					2:
-						Escribir "Ingrese el monto que desea retirar: "
+						Escribir "      Ingrese el monto que desea retirar:       "
 						leer montoRetirar
 						Si montoRetirar < capital Entonces
 							nuevoCapital = capital - montoRetirar
-							Escribir "Su monto actual es de: $" nuevoCapital
+							Escribir "      Su monto actual es de: $" nuevoCapital
 						SiNo
-							Escribir "Su capital es insuficiente" 
+							Escribir "      Su capital es insuficiente" 
 						Fin Si
 					3:
-						Escribir "Ingrese el monto que desea depositar: " 
+						Escribir "      Ingrese el monto que desea depositar: " 
 						Leer montoIngresar
 						nuevoCapital = montoIngresar + capital
-						Escribir  "Su capital actual es de: $" nuevoCapital
+						Escribir  "      Su capital actual es de: $" nuevoCapital
 					1:
-						Escribir "Su saldo en cuenta es de: $" capital
+						Escribir "      Su saldo en cuenta es de: $" capital
+					4:
+						Escribir "      Gracias por utilizar nuestro cajero Bancor"
 					De Otro Modo:
-						Escribir "Esa opción no esta disponible dentro del menu"
+						Escribir "      Esa opción no esta disponible dentro del menu"
 				Fin Segun
 			Fin Mientras
 		SiNo
